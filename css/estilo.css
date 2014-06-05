@@ -1,0 +1,607 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------------------------------ geral -----------------------------------------------*/
+
+* {
+	padding:0;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	border:none;
+}
+
+input {
+	padding:5px;
+	font-size:12px;
+}
+
+fieldset {
+	border:none;
+}
+
+a {
+	color:inherit;
+	display:inline-block;
+	width:auto;
+	text-decoration:none;
+	text-transform:none;
+}
+
+a:visited {
+	color:#000;
+	text-decoration:none;
+	text-transform:none;
+}
+
+a:active {
+	color:#000;
+	text-decoration:none;
+	text-transform:none;
+}
+
+.link {
+	cursor:pointer;
+}
+
+label {
+	display:block;
+}
+
+input {
+	padding:5px;
+	width:150px;
+}
+
+input.pequeno {
+	width: 50px;
+}
+
+input.percentual {
+	width: 50px;
+}
+
+input.grande {
+	width:360px;
+}
+
+select {
+	padding: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: auto;
+}
+
+textarea {
+	padding:10px;
+	height:70px;
+	display:block;
+}
+
+button {
+	padding:10px;
+	margin: 0px 5px;
+	border:0;
+	color: #fff;
+	cursor:pointer;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #00135A;
+}
+
+button:hover {
+	color: #000;
+	background: #999;
+	border: 1px solid #00135A;
+	padding: 9px;
+}
+
+button.fechar {
+	float:right;
+	font-weight:bold;
+	padding: 3px 5px; !important
+}
+
+button.fechar:hover {
+	padding: 2px 4px; !important
+}
+
+input[type="submit"], input[type="button"] {
+	padding:10px;
+	width:auto;
+	border:0;
+	color: #fff;
+	cursor:pointer;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #00135A;
+} 
+
+input[type="submit"]:hover, input[type="button"]:hover {
+	color: #000;
+	background: #999;
+	border: 1px solid #00135A;
+	padding: 9px;
+}
+
+fieldset div {
+	padding: 5px 10px;
+	width: auto;
+	float: left;
+	min-height: 50px;
+}
+
+fieldset div label {
+	font-size:10px;
+	font-weight:bold;
+	color: #00135A;
+}
+
+fieldset div label span{
+	color: #F00;
+}
+
+fieldset div img {
+	margin-top: 10px;
+}
+
+fieldset input[type="submit"] {
+	margin-top: 7px;
+}
+
+fieldset div.dre{
+	padding: 0;
+	width: 480px;
+	float: left;
+}
+
+fieldset div.dre div {
+	display: block;
+	float: none;
+	min-height: 30px;
+}
+
+fieldset div.dre div label {
+	font-size:12px;
+	font-weight:normal;
+	color: #000;
+	float:left;
+}
+
+fieldset div.dre div.tot label {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	float:left;
+}
+
+fieldset div.dre div.tot input {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	border: 2px solid #000;
+}
+
+fieldset div.dre div.cred label, fieldset div.dre div.deb label {
+	padding-left: 10px
+}
+
+fieldset div.dre div.cred input {
+	border: 1px solid #00F;
+}
+
+fieldset div.dre div.deb input {
+	border: 1px solid #F00;
+}
+
+fieldset div.dre div label span{
+	color: #F00;
+}
+
+fieldset div.dre div input {
+	color: #000;
+	float:right;
+	text-align:right;
+}
+
+.lista {
+	
+}
+
+.lista table {
+	text-align:left;
+	margin:10px;
+	min-width: 50%;
+	max-width: 80%;
+	border:none;
+}
+
+.lista table th{
+	text-align:center;
+}
+
+.lista table td, .lista table th{
+	padding:5px;
+}
+
+.lista table th{
+	font-size:12px;
+	background:#00135A;
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.lista table tbody tr{
+	font-size:12px;
+	cursor:pointer;
+}
+
+.lista table tbody tr.branco td{
+	font-size:10px;
+	background:#FFFFFF;
+	color:#000000;
+}
+
+.lista table tbody tr.cinza td{
+	font-size:10px;
+	background:#CCCCCC;
+	color:#000000;
+}
+
+.lista table tbody tr.branco:hover td, .lista table tbody tr.cinza:hover td{
+	background:#666666;
+	color:#FFFFFF;
+}
+
+.lista table tbody tr.selecionado td{
+	background:#666666;
+	color:#FFFFFF;
+}
+
+.janela {
+	width: 70%;
+	margin: 40px auto;
+	padding: 10px;
+	background:#FFF;
+	border: 5px solid #00135A;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+
+#tabs {
+	margin: 10px 0;
+}
+
+.camposenha {
+	display:none;
+}
+
+#divsistema {
+	display:none;
+}
+
+/* ------------------------------------ cabecalho -----------------------------------------------*/
+
+#cabecalho {
+	background: #CCC;
+	height:42px;
+}
+
+#cabecalho img {
+	height:40px;
+	float:left;
+	padding: 0 20px;
+}
+
+#cabecalho h1 {
+	font-size:24px;
+	padding: 5px 0;
+	float:left;
+}
+ 
+#cabecalho #usuario {
+	float:right;
+	height:20px;
+	padding:10px;
+}
+
+#cabecalho #usuario button {
+	float:right;
+	padding:5px;
+	margin:-5px 10px;
+}
+
+#cabecalho #usuario button:hover {
+	padding:4px;
+}
+
+/* ------------------------------------- camada 1 -----------------------------------------------*/
+
+#camada1 {
+	position: absolute;
+	width:100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	z-index:997;
+	display:none;
+	overflow:auto;
+}
+
+/* ------------------------------------- camada 2 -----------------------------------------------*/
+
+#camada2 {
+	position: absolute;
+	width:100%;
+	height:100%;
+	top: 0;
+	left: 0;
+	z-index:998;
+	display:none;
+}
+
+/* ----------------------------------- camada 3: loading -------------------------------------------*/
+
+#loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+	background-color: #000;
+	opacity: 0.3;
+	background:#000 url(/interweb/imagens/328.gif) no-repeat center center;
+}
+
+/* ------------------------------------- conteudo -----------------------------------------------*/
+
+#conteudo {
+	min-height: 550px;
+	padding:10px;
+}
+
+#caixalogin {
+	width:300px;
+	margin: 50px auto;
+	text-align:center;
+}
+
+#caixalogin div{
+	width:300px;
+	margin:10px auto;
+}
+
+#caixalogin label{
+	text-align: right;
+	width:50px;
+	float:left;
+}
+
+#caixalogin input{
+	width:200px;
+	display:inline;
+}
+
+.modulos div {
+	float:left;
+}
+
+
+.modulos a {
+	padding: 15px;
+	margin: 10px;
+	border: 0;
+	color: #fff;
+	cursor:pointer;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #FFF;
+	text-decoration:none;
+	text-align:center;
+} 
+
+.modulos a:hover {
+	-moz-box-shadow: inset 0 0 15px 4px #666;
+	-webkit-box-shadow: inset 0 0 15px 4px #666;
+	box-shadow: inner 0 0 15px 4px #666;
+}
+
+.modulos div form {
+	font-size:24px;
+	font-weight:bold;
+	padding: 28px 10px;
+	margin: 10px 0px;
+	border: 0;
+	color: #fff;
+	cursor:pointer;
+	width:280px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #00135A;
+	text-decoration:none;
+	text-align:center;
+}
+
+.modulos div form fieldset input[type=submit] {
+	border:1px solid #FFF;
+	margin-left:10px;
+	padding:9px;
+}
+
+.inicial div {
+	float:left;
+	margin: 0 2px;
+}
+
+
+.inicial a {
+	font-size:24px;
+	font-weight:bold;
+	padding: 50px 10px;
+	margin: 10px 0px;
+	border: 0;
+	color: #fff;
+	cursor:pointer;
+	width:280px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #001839;
+	text-decoration:none;
+	text-align:center;
+} 
+
+.inicial a:hover {
+	color: #000;
+	background: #999;
+	border: 1px solid #001839;
+	padding: 49px 9px;
+}
+
+.inicial div form {
+	font-size:24px;
+	font-weight:bold;
+	padding: 28px 10px;
+	margin: 10px 0px;
+	border: 0;
+	color: #fff;
+	cursor:pointer;
+	width:280px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #001839;
+	text-decoration:none;
+	text-align:center;
+}
+
+.inicial div form fieldset input[type=submit] {
+	border:1px solid #FFF;
+	margin-left:10px;
+	padding:9px;
+}
+
+#conteudo.cadastro {
+	padding-left:50px; !important
+}
+
+#conteudo #menu-lateral {
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	padding: 7px;
+	border: 1px solid #00135A;
+	border-left: 0px; 
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#conteudo #menu-lateral img {
+	display: block;
+	padding: 2px 0;
+		
+}
+
+/* --------------------------------------- rodape -----------------------------------------------*/
+
+#rodape {
+	background:#00135A;
+	color:#FFFFFF;
+	text-align:center;
+	padding: 10px;
+}
+
+/* ---------------------------------- desktop ------------------------------------------ */
+
+@media all and (min-width: 1000px) {
+	#camada1 {
+		position: fixed;
+	}
+	
+	#camada2 {
+		position: fixed;
+	}
+	
+	select {
+		max-width: 600px;
+	}
+	
+	textarea {
+		width:300px;
+	}
+}
+
+/* ---------------------------------- tablet ------------------------------------------ */
+
+@media all and (max-width: 999px) {
+	select {
+		max-width: 600px;
+	}
+	
+	textarea {
+		width: 300px;
+	}
+}
+/* ---------------------------------- celular ------------------------------------------ */
+
+@media all and (max-width: 400px) {
+	
+	.esconder{
+		display:none;
+	}
+	
+	.lista table {
+		width:auto !important;
+	}
+	
+	fieldset div.dre{
+		width: 90%;
+	}
+	
+	input.grande {
+		width:auto;
+	}
+	
+	select {
+		max-width: 180px;
+	}
+	
+	textarea {
+		width: 180px;
+	}
+	
+	#conteudo #menu-lateral img {
+		width: 25px;
+	}
+	
+}
+
+.clear {
+	clear:both;
+	padding:0;
+	margin:0;
+	height:1px;
+	min-height:1px;
+	max-height:1px;
+}
+
+.ui-autocomplete {
+     z-index: 9999 !important;
+}
